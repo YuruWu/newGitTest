@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript Practice</title>
+    <style>
+        img{
+            width: 200px;
+        }
+        .hide{
+            display: none;
+        }
+        li input {
+            display: none;
+        }
+
+        li.edit span{
+            display:none;
+        }
+
+        li.edit input{
+            display: initial;
+        }
+    </style>    
+</head>
+<body>
+
+    <header>
+        <h1>Javascript events</h1>
+    </header>
+    <main>
+        <h4>Javascript events</h4>
+        <p>
+            <input id="num-one"> + <input id="num-two">
+        </p>
+        <p id="add-sum"></p>
+        <h4>pictures</h4>
+        <ul>
+            <li><a data-img="simon-pic" id="simon" href="#">Simon Cowell</a></li>
+            <li><a data-img="bruce-pic" id="bruce" href="#"> Bruce Wills</a></li>
+            <li><a data-img="ben-pic" id="ben" href="#">Ben Carson</a></li>
+        </ul>
+        <img class="hide" id="simon-pic" src="https://www.hellomagazine.com/imagenes/celebrities/20201223103296/simon-cowell-slimmer-body-barbadous-photos/0-497-316/simon-cowell-swimming-t.jpg"> 
+        <img class="hide" id="bruce-pic" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2018%2F08%2Fdie-hard-3-2000.jpg"> 
+        <img class="hide" id="ben-pic" src="https://storage.googleapis.com/afs-prod/media/c19838a679484904991c6bc0d38a31c9/800.jpeg"> 
+
+        <ul id="checklist">
+            <li>
+                <span>Apples</span>
+                <input value="Apples" />
+            </li>
+            <li>
+                <span>Oranges</span>
+                <input value="Oranges" />                
+            </li>
+            <li>
+                <span>Bananas</span>
+                <input value="Bananas" />
+            </li>
+        </ul>
+    </main>
+</body>
+<script src="scripts/events.js"></script>
+</html>
